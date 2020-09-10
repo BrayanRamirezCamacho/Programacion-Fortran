@@ -1,0 +1,9 @@
+FUNCTION f_b(x)
+
+IMPLICIT NONE
+REAL,INTENT(IN)::x
+REAL::f_b
+
+f_b=sin(x**2)
+
+END FUNCTION 

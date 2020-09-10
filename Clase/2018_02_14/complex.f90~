@@ -1,0 +1,31 @@
+PROGRAM complex
+  !Declaración de variables
+  IMPLICIT NONE
+  REAL,PARAMETER::kind=SELECTED_REAL_KIND(14,300)
+  REAL,PARAMETER(kind)::a=3.43456789243356,b=2.18934522414578,c=7.57634529413268
+  REAL(kind)::m1,f1,f2
+  COMPLEX(kind)::x1,x2,d,C1,
+
+  !d es el determinante b²-4ac
+  d=(b**2)-(4*a*c)
+  C1=CMPLX(d,0)
+  x1=(-b+SQRT(C1))/(2*a)
+  x2=(-b-SQRT(C1))/(2*a)
+  !m es el módulo de los números complejos
+  m1=ABS(x1))
+  PRINT*,"El módulo de las raíces es:"
+  PRINT*,m1
+  PRINT*,
+  !f es la fase de los números complejos
+  f1=ATAN(x1)
+  f2=ATAN(x2)
+  PRINT*,"La fase de las raíces complejas es:"
+  PRINT*,f1," y ",f2
+  PRINT*,
+  
+  !Impresión en pantalla de las raíces
+  PRINT*, "x1="REAL(x1),"+i",AIMAG(x1)
+  PRINT*, "x2="REAL(x2),"+i",AIMAG(x2)
+  
+
+END PROGRAM complex

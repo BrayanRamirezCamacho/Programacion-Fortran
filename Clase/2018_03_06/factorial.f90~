@@ -1,0 +1,25 @@
+!=================================================================
+!Esta función hace la suma de los n primeros números enteros,
+!donde n es introducido por el usuario y es un número entero
+!positivo.
+!=================================================================
+
+
+FUNCTION suma(n)
+  
+  IMPLICIT NONE
+  INTEGER::n
+  INTEGER::suma
+  INTEGER::i
+  
+  
+     DO WHILE 
+       IF(i==n)EXIT
+        suma=suma+i
+        i=i+1
+     END DO
+        
+  
+
+
+END FUNCTION

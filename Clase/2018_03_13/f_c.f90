@@ -1,0 +1,9 @@
+FUNCTION f_c(x)
+
+IMPLICIT NONE
+REAL,INTENT(IN)::x
+REAL::f_c
+
+f_c=cos(x**2)
+
+END FUNCTION 

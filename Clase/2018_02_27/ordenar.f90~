@@ -1,0 +1,67 @@
+PROGRAM ordenar
+
+  !
+  IMPLICIT NONE
+  REAL::x1,x2,x3,x4,x5,r
+
+  PRINT*,"Escriba 5 números cualesquiera: "
+  READ*,x1,x2,x3,x4,x5
+
+  !Primero se comparan por parejas
+  IF(x3>x4)THEN
+     r=x3
+     x3=x4
+     x4=r
+  END IF
+
+  IF(x1>x2)THEN
+     r=x1
+     x1=x2
+     x2=r
+  END IF
+
+  !Ahora se compara el último número
+  IF(.NOT.x5>x4)THEN
+     IF(x5>x3)THEN
+        r=x5
+        x5=x4
+        x4=r
+     END IF
+
+     IF(.NOT.x5>x3)THEN
+        IF(x5>x2)THEN
+           r=x5
+           x5=x3
+           x3=r
+        END IF
+
+        IF(.NOT.x5>x2)THEN
+           IF(x5>x1)THEN
+              r=x5
+              x5=x2
+              x2=r
+           END IF
+
+           IF(.NOT.x5>x1)THEN
+              r=x5
+              x5=x1
+              x1=r
+           END IF
+        END IF
+
+     END IF
+
+  END IF
+
+  !Los números están ahora ordenados de menor a mayor
+  !Ahora se pregunta al usuario el orden de preferido
+  PRINT*,"¿Quiere ordenar los números ascendentemente? (SI o NO)"
+  SELECT CASE(si.OR.Si.OR.Sí.OR.SI)
+     PRINT*,x1,x2,x3,x4,x5
+  SELECT CASE(No.OR.no.OR.NO)
+     PRINT*,x5,x4,x3,x2,x1
+
+     PRINT*,
+     PRINT*,"Adiós vaquero."
+        
+       
