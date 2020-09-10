@@ -1,0 +1,19 @@
+  !Este es el programa maestro para calcular las sumatorias
+PROGRAM series
+
+  IMPLICIT NONE 
+
+
+  PRINT*,"Hola usuario, con este programa podrá calcular alguna"
+  PRINT*,"de las siguientes series (desde i=1 hasta N):"
+  PRINT*,"1) (i+1)^2-i^2 "
+  PRINT*,"2) 2^(i+1)-2^i "
+  PRINT*,"3) (1/i)-(1/(i+1)) "
+  PRINT*,"N es el número de sumas parciales de la serie."
+  PRINT*,
+  PRINT*,"Escoja la serie que desea calcular:"
+  READ*,
+  PRINT*,"Escriba N:"
+  READ*,N
+  
+END PROGRAM

@@ -1,0 +1,13 @@
+SUBROUTINE subr(f,N,res)
+
+  IMPLICIT NONE
+  REAL,EXTERNAL::funcion1,funcion2,funcion3
+
+  suma=0
+  
+  DO i=1,N,1
+     suma=suma+f(i)
+        
+  END DO
+
+END SUBROUTINE 

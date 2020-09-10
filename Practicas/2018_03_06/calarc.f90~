@@ -1,0 +1,12 @@
+  !calar la función del area de un circulo.
+
+PROGRAM calarc
+  IMPLICIT NONE
+  REAL,EXTERNAL::area(r)
+  REAL::r,A
+
+  PRINT*,"Escriba el radio de su círculo."
+  READ*,r
+  A=area(r)
+  PRINT*,"Su área es:"
+  PRINT*,A

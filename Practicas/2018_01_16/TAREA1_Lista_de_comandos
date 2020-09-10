@@ -1,0 +1,13 @@
+Comandos
+
+ls - Enlista el contenido del directorio o carpeta en el que nos encontremos
+touch - Cambia o actualiza la fecha de los archivos para asignarle la fecha actual
+cp - Copia carpetas o directorios, además de archivos 
+mv - Mueve archivos entre carpeta y carpeta
+rm - Elimina o remueve archivos
+mkdir - Crea carpetas o directorios 
+cd - Cambia la ubicación en la que estamos trabajando, es decir, nos mueve de directorio. En la interfaz gráfica esto lo vemos como "cambiar" de carpeta.
+pwd - Muestra el nombre del directorio en el que estamos trabajando.
+
+Brayan Alexis Ramirez Camacho
+
